@@ -1,0 +1,87 @@
+/* --- 11. SUB-PAGE HEADER --- */
+.page-header {
+    background-color: var(--color-secondary-cream);
+    padding: 60px 5%;
+    text-align: center;
+    border-bottom: 5px solid var(--color-accent-sage);
+}
+
+.page-header h1 {
+    color: var(--color-accent-forest);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* --- 12. INFO CARDS (ECS Section) --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.info-card {
+    background: var(--color-secondary-cream);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 4px solid var(--color-accent-forest);
+}
+
+.info-card h3 {
+    color: var(--color-accent-forest);
+    margin-top: 0;
+}
+
+/* --- 13. IMAGES & DIAGRAMS --- */
+.ecs-diagram-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* --- 14. MEDICAL TABLE STYLING --- */
+.medical-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.medical-table th, 
+.medical-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.medical-table th {
+    background-color: var(--color-accent-forest);
+    color: var(--color-primary-white);
+    font-family: 'Lora', serif;
+}
+
+.medical-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey stripes for readability */
+}
+
+/* Mobile Fix for Tables */
+@media (max-width: 600px) {
+    .medical-table {
+        display: block;
+        overflow-x: auto; /* Allows scrolling sideways on small phones */
+        white-space: nowrap;
+    }
+}
